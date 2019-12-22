@@ -1,0 +1,37 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Library/Trumbowyg-master/Trumbowyg-master/dist/ui/trumbowyg.min.css" rel="stylesheet" />
+    <title>Ekle</title>
+
+</head>
+<body>
+
+    <form action='@Url.Action("Ekle","Editor")' method="post">
+       
+ 
+        @Html.AntiForgeryToken()
+
+
+        <textarea id="icerik" name="Icerik" >
+</textarea>
+
+     
+
+        <br />
+        <input type="submit" value="Ekle" />
+    </form>
+
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Library/Trumbowyg-master/Trumbowyg-master/dist/trumbowyg.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#icerik').trumbowyg();
+        });
+    </script>
+</body>
+</html>

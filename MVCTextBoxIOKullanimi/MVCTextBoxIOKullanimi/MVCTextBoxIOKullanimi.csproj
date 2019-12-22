@@ -1,0 +1,558 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{90214212-B6CB-4003-AAAF-D9F893E59931}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVCTextBoxIOKullanimi</RootNamespace>
+    <AssemblyName>MVCTextBoxIOKullanimi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\.gitattributes" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\.gitignore" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\banner.jpg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ar.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ar.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\bg.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\bg.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\by.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\by.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ca.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ca.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\cs.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\cs.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\da.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\da.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\de.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\de.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\el.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\el.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\es.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\es.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\es_ar.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\es_ar.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\fa.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\fa.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\fi.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\fi.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\fr.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\fr.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\he.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\he.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\hr.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\hr.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\hu.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\hu.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\id.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\id.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\it.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\it.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ja.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ja.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ko.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ko.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\lt.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\lt.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\mn.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\mn.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\my.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\my.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\nl.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\nl.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\no_nb.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\no_nb.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ph.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ph.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\pl.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\pl.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\pt.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\pt.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\pt_br.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\pt_br.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ro.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ro.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\rs.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\rs.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\rs_latin.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\rs_latin.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ru.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ru.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\sk.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\sk.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\sl.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\sl.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\sq.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\sq.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\sv.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\sv.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\th.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\th.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\tr.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\tr.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ua.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\ua.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\vi.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\vi.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\zh_cn.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\zh_cn.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\zh_tw.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\langs\zh_tw.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\allowtagsfrompaste\trumbowyg.allowtagsfrompaste.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\allowtagsfrompaste\trumbowyg.allowtagsfrompaste.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\base64\trumbowyg.base64.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\base64\trumbowyg.base64.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\cleanpaste\trumbowyg.cleanpaste.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\cleanpaste\trumbowyg.cleanpaste.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\colors\trumbowyg.colors.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\colors\trumbowyg.colors.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\colors\ui\trumbowyg.colors.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\colors\ui\trumbowyg.colors.min.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\emoji\trumbowyg.emoji.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\emoji\trumbowyg.emoji.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\emoji\ui\trumbowyg.emoji.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\emoji\ui\trumbowyg.emoji.min.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\fontfamily\trumbowyg.fontfamily.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\fontfamily\trumbowyg.fontfamily.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\fontsize\trumbowyg.fontsize.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\fontsize\trumbowyg.fontsize.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\giphy\trumbowyg.giphy.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\giphy\trumbowyg.giphy.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\giphy\ui\trumbowyg.giphy.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\giphy\ui\trumbowyg.giphy.min.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\highlight\trumbowyg.highlight.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\highlight\trumbowyg.highlight.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\highlight\ui\trumbowyg.highlight.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\highlight\ui\trumbowyg.highlight.min.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\history\trumbowyg.history.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\history\trumbowyg.history.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\insertaudio\trumbowyg.insertaudio.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\insertaudio\trumbowyg.insertaudio.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\lineheight\trumbowyg.lineheight.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\lineheight\trumbowyg.lineheight.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\mathml\trumbowyg.mathml.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\mathml\trumbowyg.mathml.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\mathml\ui\trumbowyg.mathml.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\mathml\ui\trumbowyg.mathml.min.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\mention\trumbowyg.mention.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\mention\trumbowyg.mention.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\mention\ui\trumbowyg.mention.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\mention\ui\trumbowyg.mention.min.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\noembed\trumbowyg.noembed.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\noembed\trumbowyg.noembed.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\pasteembed\trumbowyg.pasteembed.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\pasteembed\trumbowyg.pasteembed.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\pasteimage\trumbowyg.pasteimage.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\pasteimage\trumbowyg.pasteimage.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\preformatted\trumbowyg.preformatted.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\preformatted\trumbowyg.preformatted.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\resizimg\trumbowyg.resizimg.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\resizimg\trumbowyg.resizimg.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\ruby\trumbowyg.ruby.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\ruby\trumbowyg.ruby.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\specialchars\trumbowyg.specialchars.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\specialchars\trumbowyg.specialchars.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\specialchars\ui\trumbowyg.specialchars.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\specialchars\ui\trumbowyg.specialchars.min.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\table\trumbowyg.table.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\table\trumbowyg.table.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\table\ui\trumbowyg.table.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\table\ui\trumbowyg.table.min.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\template\trumbowyg.template.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\template\trumbowyg.template.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\upload\trumbowyg.upload.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\upload\trumbowyg.upload.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\trumbowyg.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\trumbowyg.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\ui\icons.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\ui\trumbowyg.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\ui\trumbowyg.min.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\.gitignore" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\css\main.css" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\core\dark-theme.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\core\default.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\core\simple.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\index.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\js\highlight.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\js\loader.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\js\runExampleCode.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\allowtagsfrompaste.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\base64.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\cleanpaste.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\colors.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\emoji.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\fontfamily.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\fontsize.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\giphy.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\highlight.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\history.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\insertaudio.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\lineheight.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\mathml.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\mention.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\noembed.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\pasteembed.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\pasteimage.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\preformatted.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\resizimg.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\ruby.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\specialchars.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\table.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\template.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\demos\plugins\upload.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\documentation.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\documentation\core\index.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\documentation\index.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\documentation\plugins\index.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\favicon.png" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\gulpfile.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\humans.txt" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\img\beer.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\img\globe.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\img\introduction-customizable.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\img\introduction-html.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\img\introduction-lightweight.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\img\logo-doc.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\img\logo.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\index.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\js\main.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\js\vendor\highlight.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\js\vendor\jquery-3.3.1.min.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\robots.txt" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\gulpfile.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\index.html" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\allowtagsfrompaste\trumbowyg.allowtagsfrompaste.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\base64\trumbowyg.base64.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\base64\ui\icons\base64.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\cleanpaste\trumbowyg.cleanpaste.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\colors\trumbowyg.colors.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\colors\ui\icons\back-color.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\colors\ui\icons\fore-color.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\emoji\trumbowyg.emoji.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\emoji\ui\icons\emoji.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\fontfamily\trumbowyg.fontfamily.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\fontsize\trumbowyg.fontsize.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\fontsize\ui\icons\fontsize.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\giphy\trumbowyg.giphy.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\giphy\ui\icons\giphy.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\highlight\trumbowyg.highlight.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\highlight\ui\icons\highlight.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\history\trumbowyg.history.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\insertaudio\trumbowyg.insertaudio.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\insertaudio\ui\icons\insert-audio.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\lineheight\trumbowyg.lineheight.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\lineheight\ui\icons\lineheight.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\mathml\trumbowyg.mathml.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\mathml\ui\icons\mathml.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\mention\trumbowyg.mention.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\mention\ui\icons\mention.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\noembed\trumbowyg.noembed.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\noembed\ui\icons\noembed.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\pasteembed\trumbowyg.pasteembed.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\pasteimage\trumbowyg.pasteimage.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\preformatted\trumbowyg.preformatted.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\preformatted\ui\icons\preformatted.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\resizimg\trumbowyg.resizimg.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\ruby\trumbowyg.ruby.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\ruby\ui\icons\ruby.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\specialchars\trumbowyg.specialchars.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\specialchars\ui\icons\special-chars.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\table\trumbowyg.table.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\table\ui\icons\col-delete.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\table\ui\icons\col-left.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\table\ui\icons\col-right.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\table\ui\icons\row-above.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\table\ui\icons\row-below.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\table\ui\icons\row-delete.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\table\ui\icons\table-delete.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\table\ui\icons\table.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\template\trumbowyg.template.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\upload\trumbowyg.upload.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\upload\ui\icons\upload.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\sponsors\avot.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\sponsors\bookingninja.png" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\sponsors\socialoptic.png" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\ar.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\bg.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\by.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\ca.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\cs.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\da.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\de.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\el.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\en.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\es.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\es_ar.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\fa.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\fi.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\fr.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\he.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\hr.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\hu.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\id.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\it.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\ja.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\ko.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\lt.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\mn.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\my.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\nl.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\no_nb.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\ph.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\pl.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\pt.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\pt_br.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\ro.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\rs.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\rs_latin.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\ru.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\sk.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\sl.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\sq.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\sv.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\th.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\tr.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\ua.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\vi.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\zh_cn.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\langs\zh_tw.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\trumbowyg.js" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\blockquote.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\bold.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\close.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\create-link.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\del.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\em.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\fullscreen.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\h1.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\h2.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\h3.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\h4.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\h5.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\h6.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\horizontal-rule.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\insert-image.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\italic.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\justify-center.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\justify-full.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\justify-left.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\justify-right.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\link.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\ordered-list.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\p.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\redo.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\removeformat.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\strikethrough.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\strong.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\subscript.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\superscript.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\underline.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\undo.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\unlink.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\unordered-list.svg" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\icons\view-html.svg" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Views\Editor\Goster.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Models\Trumbowyg.cs" />
+    <Compile Include="Controllers\EditorController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StaticDb\VirtualDatabase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\.bowerrc" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\.github\FUNDING.yml" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\.github\ISSUE_TEMPLATE.md" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\.jshintrc" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\.npmignore" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\BACKERS.md" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\bower.json" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\CONTRIBUTORS.md" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\colors\ui\sass\trumbowyg.colors.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\emoji\ui\sass\trumbowyg.emoji.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\giphy\ui\sass\trumbowyg.giphy.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\highlight\ui\sass\trumbowyg.highlight.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\mathml\ui\sass\trumbowyg.mathml.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\mention\ui\sass\trumbowyg.mention.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\specialchars\ui\sass\trumbowyg.specialchars.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\plugins\table\ui\sass\trumbowyg.table.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\dist\ui\sass\trumbowyg.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\.jshintrc" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\font\panton.eot" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\font\panton.ttf" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\font\panton.woff" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\font\panton.woff2" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\package.json" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\main.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_base.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_buttons.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_documentation.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_donate.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_font.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_footer.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_get-started.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_header.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_highlightjs-github.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_introduction.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_languages.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_normalize.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_plugins-packages.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\scss\_section.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\docs\yarn.lock" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\LICENSE" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\package.json" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\colors\ui\sass\trumbowyg.colors.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\emoji\ui\sass\trumbowyg.emoji.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\giphy\ui\sass\trumbowyg.giphy.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\highlight\ui\sass\trumbowyg.highlight.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\mathml\ui\sass\trumbowyg.mathml.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\mention\ui\sass\trumbowyg.mention.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\specialchars\ui\sass\trumbowyg.specialchars.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\plugins\table\ui\sass\trumbowyg.table.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\README.md" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\src\ui\sass\trumbowyg.scss" />
+    <Content Include="Library\Trumbowyg-master\Trumbowyg-master\yarn.lock" />
+    <None Include="packages.config" />
+    <Content Include="Views\Editor\Ekle.cshtml" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52445</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52445/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
